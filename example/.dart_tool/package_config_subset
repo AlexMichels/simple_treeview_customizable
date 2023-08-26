@@ -58,14 +58,6 @@ web
 3.1
 file:///Users/alexandermichels/.pub-cache/hosted/pub.dev/web-0.1.4-beta/
 file:///Users/alexandermichels/.pub-cache/hosted/pub.dev/web-0.1.4-beta/lib/
-flutter_simple_treeview
-2.12
-file:///Users/alexandermichels/Desktop/flutter.widgets/packages/flutter_simple_treeview/
-file:///Users/alexandermichels/Desktop/flutter.widgets/packages/flutter_simple_treeview/lib/
-flutter_tree_demo
-2.12
-file:///Users/alexandermichels/Desktop/flutter.widgets/packages/flutter_simple_treeview/example/
-file:///Users/alexandermichels/Desktop/flutter.widgets/packages/flutter_simple_treeview/example/lib/
 sky_engine
 3.0
 file:///Users/alexandermichels/Developer/flutter/bin/cache/pkg/sky_engine/
@@ -78,4 +70,12 @@ flutter_web_plugins
 3.0
 file:///Users/alexandermichels/Developer/flutter/packages/flutter_web_plugins/
 file:///Users/alexandermichels/Developer/flutter/packages/flutter_web_plugins/lib/
+flutter_simple_treeview
+2.12
+file:///Users/alexandermichels/Developer/simple_treeview_customizable/
+file:///Users/alexandermichels/Developer/simple_treeview_customizable/lib/
+flutter_tree_demo
+2.12
+file:///Users/alexandermichels/Developer/simple_treeview_customizable/example/
+file:///Users/alexandermichels/Developer/simple_treeview_customizable/example/lib/
 2
