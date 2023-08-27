@@ -21,6 +21,8 @@ class TreeView extends StatefulWidget {
 
   final bool? leading;
 
+  final Color? iconColor;
+
   /// Size of the expand/collapse icon.
   final double? iconSize;
 
@@ -32,6 +34,7 @@ class TreeView extends StatefulWidget {
       required List<TreeNode> nodes,
       this.indent = 40,
       this.leading = true,
+      this.iconColor,
       this.iconSize,
       this.treeController})
       : nodes = copyTreeNodes(nodes),
@@ -52,7 +55,7 @@ class _TreeViewState extends State<TreeView> {
 
   @override
   Widget build(BuildContext context) {
-    return buildNodes(widget.nodes, widget.indent, widget.leading, _controller!,
-        widget.iconSize);
+    return buildNodes(widget.nodes, widget.indent, widget.leading,
+        widget.iconColor, _controller!, widget.iconSize);
   }
 }

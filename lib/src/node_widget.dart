@@ -16,6 +16,7 @@ class NodeWidget extends StatefulWidget {
   final double? indent;
   final double? iconSize;
   final bool? leading;
+  final Color? iconColor;
   final TreeController state;
 
   const NodeWidget(
@@ -23,6 +24,7 @@ class NodeWidget extends StatefulWidget {
       required this.treeNode,
       this.indent,
       this.leading,
+      this.iconColor,
       required this.state,
       this.iconSize})
       : super(key: key);
@@ -62,7 +64,10 @@ class _NodeWidgetState extends State<NodeWidget> {
             if (widget.leading != true) widget.treeNode.content,
             IconButton(
               iconSize: widget.iconSize ?? 24.0,
-              icon: Icon(icon),
+              icon: Icon(
+                icon,
+                color: widget.iconColor,
+              ),
               onPressed: onIconPressed,
             ),
             if (widget.leading == true) widget.treeNode.content,
@@ -71,8 +76,13 @@ class _NodeWidgetState extends State<NodeWidget> {
         if (_isExpanded && !_isLeaf)
           Padding(
             padding: EdgeInsets.only(left: widget.indent!),
-            child: buildNodes(widget.treeNode.children!, widget.indent,
-                widget.leading, widget.state, widget.iconSize),
+            child: buildNodes(
+                widget.treeNode.children!,
+                widget.indent,
+                widget.leading,
+                widget.iconColor,
+                widget.state,
+                widget.iconSize),
           )
       ],
     );
